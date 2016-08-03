@@ -23,3 +23,4 @@ By forking this project and commiting changes to user project, we can help with 
 6. Go through [Spark SQL and Dataframe programing guide](http://spark.apache.org/docs/1.5.2/sql-programming-guide.html) and [Spark Scala API doc](http://spark.apache.org/docs/1.5.2/api/scala/index.html#org.apache.spark.package), majorly the methods in the [DataFrame Class](http://spark.apache.org/docs/1.5.2/api/scala/index.html#org.apache.spark.sql.DataFrame) and functions in the [functions package](http://spark.apache.org/docs/1.5.2/api/scala/index.html#org.apache.spark.sql.functions$)
 7. Make some changes on the example modules by trying out some of the Spark functions
 8. Go through the rest of SMV User Guide
+9. Write a UDF function and apply it to a column of a Spark DataFrame
