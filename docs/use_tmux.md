@@ -26,7 +26,7 @@ function tmuxa() {
     export KRB5CCNAME=$KRB5CCNAME
     export CDC_JOINED_DC=$CDC_JOINED_DC
 EOF
-    tmux a
+    tmux a $@
 }
 
 function tmuxenv() {
@@ -40,12 +40,17 @@ With those functiosn, from the login shell, instead of type "tmux a" to re-attac
 
 |Task|shortcuts|
 |:---|:---|
-| attach to session RNN| tmux a -t RNN|
+| attach to session named RNN| tmux a -t RNN|
 | list session names| tmux ls|
 | start new session myname| tmux new -s myname|
 | rename session | tmux rename-session -t old_name new_name   (if old_name is not entered, it will * rename the recently used session)|
 | kill session | tmux kill-session -t myname|
 | panes split | horizontal split `ctrl+b  "` vertical split `ctrl+b  %`|
+
+With the `tmuxa` function defined in the `.bashrc`, to attach to a session with name `RNN` should be
+```
+tmuxa -t RNN
+```
 
 ## Use mouse in Tmux
 Please refer http://www.davidverhasselt.com/enable-mouse-support-in-tmux-on-os-x/ for how to setup Tmux so that you can use mouse to select windows change window size, etc
